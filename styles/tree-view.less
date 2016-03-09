@@ -14,7 +14,12 @@
   color: @text-color;
   background-color: @tree-view-background-color;
 
-  .list-item.selected {
+  .list-item {
+    color: @text-color;
+  }
+
+  .file.selected,
+  .directory.selected > .header {
     color: @text-color-selected;
   }
 }
