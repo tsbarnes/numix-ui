@@ -4,12 +4,23 @@
 
 // Used to color git status
 
-.status          { color: @text-color; }
-.status-added    { color: @ui-site-color-2; }
-.status-ignored  { color: fade(@text-color, 0.5); }
-.status-modified { color: @ui-site-color-3; }
-.status-removed  { color: @ui-site-color-5; }
-.status-renamed  { color: @ui-site-color-1; }
+.file {
+  &.status          { color: @text-color; }
+  &.status-added    { color: @ui-site-color-2; }
+  &.status-ignored  { color: @text-color-subtle; }
+  &.status-modified { color: @ui-site-color-3; }
+  &.status-removed  { color: @ui-site-color-5; }
+  &.status-renamed  { color: @ui-site-color-1; }
+}
+
+.directory {
+  &.status > .header          { color: @text-color; }
+  &.status-added > .header    { color: @ui-site-color-2; }
+  &.status-ignored > .header  { color: @text-color-subtle; }
+  &.status-modified > .header { color: @ui-site-color-3; }
+  &.status-removed > .header  { color: @ui-site-color-5; }
+  &.status-renamed > .header  { color: @ui-site-color-1; }
+}
 
 // Used by git-control
 
