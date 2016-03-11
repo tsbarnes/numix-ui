@@ -6,9 +6,18 @@
 // Overrides: atom/tabs
 
 .tab-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
   background-color: @tab-bar-background-color;
 
   .tab {
+    display: block;
+    flex: auto;
+    position: relative;
+    max-width: none;
+    text-align: center;
     color: @text-color-subtle;
     height: @tab-height;
     line-height: @tab-height;
