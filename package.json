@@ -1,7 +1,7 @@
 {
   "name": "numix-ui",
   "theme": "ui",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A Numix-inspired UI theme for Atom",
   "keywords": [
     "ui",
